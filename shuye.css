@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* CSS Document */
+ *{
+		border: 0;
+		margin: 0 auto;
+	}
+	
+	ul ,li{list-style:none;}    
+	a{display:block;}    
+	a:link,a:visited{text-decoration: none;color:#000000;}
+	
+	/*自定义*/
+	body{
+		margin-top: 30px;
+		width: 1024px;
+		height: 702px;
+		background: url(img/术3的副本.jpg) no-repeat center;
+		position: relative;
+	}
+	
+	.main{
+		width: 988px;
+		height: 280px;
+		position: absolute;
+		bottom: 25px;
+		right: 0;
+	}
+	/*标题样式*/
+	.main-title{
+		height: 70px;
+		text-align: right;
+	}
+	.main-title .main-title_workspace{
+		font-size: 18px;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+	.main-title .main-title_dramaname{
+		font-size: 36px;
+		font-weight: bold;
+		margin-top: 5px;
+	}
+	
+	/*list样式*/
+	.main-contain{
+		width: 100%;
+		height: 172px;
+		font-size: 12px;
+	}
+	.main-contain .main-contain_list
+	{
+		width:100%;
+		position: relative;
+	}
+	.main-contain .main-contain_list ul{
+		position: absolute;
+		top:0;
+		right: 0;
+		padding: 0;
+	}
+	.main-contain .main-contain_list ul li
+	{
+		position:relative;
+		float:left;
+    	font-size:20px;
+		width:230px;
+		height: 30px;
+		text-align: center;
+    	margin-right:1px;
+		background: #feb808;
+	}
+	.main-contain .main-contain_list ul li ul{display:none;} 
+	.main-contain .main-contain_list ul li ul li{
+		margin-top:1px;
+		width: 690px;
+		height: 170px;
+		text-align: left;
+		font-size: 12px;
+	}
+	.main-contain .main-contain_list ul li:hover ul{
+		display:block;
+		position: absolute; 
+		left:0px; 
+		top: 30px;
+	}
+	.main-contain .main-contain_list ul li:nth-child(3):hover ul,
+	.main-contain .main-contain_list ul li:nth-child(4):hover ul{
+		display:block;
+		position: absolute; 
+		left: -460px;
+	}
+	
+	/*前三栏下拉导航*/
+	.staff-list p{
+		margin:15px;
+		font-size: 13px;
+		text-align: right;
+	}
+	.cast-list p{
+		margin: 0.6em;
+	}
+	.ED-list p {
+		margin: 20px;
+		font-size: 14px;
+	}
+	
+	/*link-list下拉导航*/
+	.main-contain .main-contain_list ul li:nth-child(1) ul li{
+		margin-top:1px;
+		width: 230px;
+		height: 28px;
+		line-height: 28px;
+		text-align: center;
+		font-size: 12px;
+	}
+	.main-contain .main-contain_list ul li:nth-child(1) ul a:hover{
+		background: #3b4e65;
+		color: aliceblue;
+	}
+	.main-contain .main-contain_list ul li:nth-child(1):hover ul{
+		display:block;
+		position: absolute; 
+		left: 0px;
+	}
+	
+	.announce{
+		position: absolute;
+		bottom: 15px;
+		right:10px;
+		text-align: right;
+		z-index: -1;
+		font-size: 12px;
+	}
+
